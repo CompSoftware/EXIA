@@ -43,3 +43,4 @@ Each _system_ has many different substrate orientations which is called as _mode
 
 ### License
 ___
+[GPL v3](https://github.com/PYMMAMA/EXIA/blob/master/licenses/EXIA_license.txt).
