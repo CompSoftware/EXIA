@@ -5,7 +5,7 @@ import numpy as np
 def optmized_structure(system,tag,input_dir,output_dir):
 
     analysis_method         = 'optimized_charge'
-    input_file_list         = os.listdir(input_dir)
+    input_file_list         = [_ for _ in os.listdir(input_dir) if _.endswith('.out')]
 
     output_new_dir          = os.path.join(output_dir,system,tag,analysis_method)
     isExist = os.path.exists(output_new_dir)

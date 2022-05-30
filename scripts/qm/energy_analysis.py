@@ -3,7 +3,7 @@ import os
 def frequency(system,tag,input_dir,output_dir):
 
     analysis_method         = 'frequency_energy'
-    input_file_list         = os.listdir(input_dir)
+    input_file_list         = [_ for _ in os.listdir(input_dir) if _.endswith('.out')]
         
     output_new_dir          = os.path.join(output_dir,system,tag,analysis_method)
     isExist = os.path.exists(output_new_dir)
@@ -79,7 +79,7 @@ def frequency(system,tag,input_dir,output_dir):
 
 def single_point(system,tag,input_dir,output_dir):
     analysis_method         = 'single_point_energy'
-    input_file_list         = os.listdir(input_dir)
+    input_file_list         = [_ for _ in os.listdir(input_dir) if _.endswith('.out')]
         
     output_new_dir          = os.path.join(output_dir,system,tag,analysis_method)
     isExist = os.path.exists(output_new_dir)
