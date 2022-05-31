@@ -37,7 +37,7 @@ def optmized_structure(system,tag,input_dir,output_dir):
                 end_line_num=i
 
         for j,line in enumerate(open(target_file,'r')):
-            if j > start_line_num and j < end_line_num-2:
+            if j > start_line_num and j < end_line_num-1:
                 output_file.write(line)
 
         masking_replace     =   {   ' ':',',
